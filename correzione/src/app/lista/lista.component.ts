@@ -9,4 +9,9 @@ import { Vegetables } from '../Models/vegetables.model';
 })
 export class ListaComponent {
   @Input() verdura!: Vegetables
+
+  aggiungi(nProd: HTMLInputElement)
+  {
+    console.log("Nome "+ this.verdura.nome + " Quantità "+ nProd.value )
+  }
 }
