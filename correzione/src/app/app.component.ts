@@ -5,10 +5,11 @@ import { Observable } from 'rxjs';
 import { ListaComponent } from './lista/lista.component';
 import { Vegetables } from './Models/vegetables.model';
 import { CartProduct } from './Models/cartProduct.model';
+import { DetailsComponent } from './details/details.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ListaComponent],
+  imports: [RouterOutlet, ListaComponent, DetailsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -22,6 +23,7 @@ export class AppComponent implements OnInit{
 
   vettVerd: Vegetables[] = []
   cartPro: CartProduct[] =[]
+  
   constructor(http:HttpClient){this.http = http}
 
   makeChiamata(){

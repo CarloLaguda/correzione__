@@ -1,4 +1,10 @@
 @for(verd of vettVerd; track verd)
 {
-  <app-lista [verdura] = "verd"></app-lista>
+  <app-lista [verdura] = "verd" [cartProdu]="cartPro" ></app-lista>
 }
+
+@for(cart of cartPro; track cart)
+ {
+  <p>ciao</p>
+  <app-details [carts] = "cart"></app-details>
+ }
