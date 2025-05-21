@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { Observable } from 'rxjs';
 import { ListaComponent } from './lista/lista.component';
 import { Vegetables } from './Models/vegetables.model';
+import { CartProduct } from './Models/cartProduct.model';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +21,7 @@ export class AppComponent implements OnInit{
   http: HttpClient
 
   vettVerd: Vegetables[] = []
+  cartPro: CartProduct[] =[]
   constructor(http:HttpClient){this.http = http}
 
   makeChiamata(){
