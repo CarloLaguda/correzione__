@@ -15,5 +15,5 @@ export class ListaComponent {
   {
     console.log("Nome "+ this.verdura.nome + " Quantità "+ nProd.value )
     this.cartProdu.push(new CartProduct(this.verdura.nome, this.verdura.descrizione, this.verdura.prezzo, nProd.value))
-  }
+  }//hhaha
 }
